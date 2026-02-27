@@ -22,11 +22,34 @@ public class Main
         Point p2 =  p.translated(30F, -0.5F);
         System.out.println(p2);
 
-        Segmenet s = new Segmenet();
+        Segment s = new Segment();
         s.p = p;
         s.q = p2;
         System.out.println(s.length());
+
+        Point p3 = new Point();
+        p3.x=6;
+        p3.y=13;
+        Point p4 = new Point();
+        p4.x = 5;
+        p4.y = 15;
+        Segment s2 = new Segment();
+        s2.q=p3;
+        s2.p=p4;
+        Point p5 = new Point();
+        p5.x=12;
+        p5.y=7;
+        Point p6 = new Point();
+        p6.x = 8;
+        p6.y = 15;
+        Segment s3 = new Segment();
+        s3.q=p5;
+        s3.p=p6;
+
+        Segment[] segments = new Segment[3];
+        segments[0]=s;
+        segments[1]=s2;
+        segments[2]=s3;
+        System.out.println(Segment.findmax(segments).p);
     }
-
-
 }

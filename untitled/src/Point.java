@@ -24,5 +24,4 @@ public class Point
         newPoint.y =this.y + dy;
         return newPoint;
     }
-
 }
