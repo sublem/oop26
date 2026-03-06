@@ -22,5 +22,6 @@ public class Main
         scene.addPolygon(p1);
         scene.addPolygon(p2);
         System.out.println(scene.toSvg());
+        System.out.println(p1.boundingBox());
     }
 }
