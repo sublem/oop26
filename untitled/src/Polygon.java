@@ -6,7 +6,10 @@ public class Polygon {
 
     public Polygon(Point[] points) {
         this.points = new Point[points.length];
-        System.arraycopy(points,0,this.points,0,points.length);
+        for (int i=0;i<points.length;i++)
+        {
+            this.points[i] = new Point(points[i]);
+        }
     }
 
     @Override
